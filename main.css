@@ -3,6 +3,8 @@ body {
     font-weight: 300;
 }
 
+/* header */
+
 header {
     padding: 20px 0;
 }
@@ -28,6 +30,8 @@ header p {
     margin: 0;
 }
 
+/* cover image */
+
 .jumbotron {
     display: flex;
     align-items: center;
@@ -39,17 +43,16 @@ header p {
     /*  text-shadow: 0.25px 0.25px 0.25px #000000;*/
 }
 
-.jumbotron h2 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
+
+/* eduaction */
+
+.education_list {
+    list-style-position: outside; 
+    padding-left: 1em
 }
 
-.jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
-}
+
+/* project */
 
 section .row img {
     margin: 20px 0 30px;
@@ -57,22 +60,6 @@ section .row img {
     max-height: 100%;
 }
 
-.col-md-6 {
-    margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    text-shadow: none;
-    background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
-}
 
 .alignleft {
     float: left;
@@ -81,13 +68,6 @@ section .row img {
 .alignright {
     float: right;
 }
-
-.btn-secondary {
-    background-color: #E8DFE0;
-    color: #ffffff;
-    margin: 0 0 30px;
-}
-
 
 .project_image {
     margin: 0 0 5px;
@@ -119,6 +99,7 @@ section .row img {
 }
 
 
+/*skills*/
 .skill_list .row {
     display: flex;
     align-items: base;
