@@ -39,6 +39,10 @@ body {
   width: auto;
 }
 
+.navbar-right {
+  padding-right: 10px;
+}
+
 
 /*font set
 --------------------------------------------------- */
@@ -71,6 +75,8 @@ body {
 .marketing {
   text-align: left;
   margin-bottom: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -133,6 +139,10 @@ body {
   color: #333333;
 }
 
+.intro-self p {
+  font-size: 1.3em;
+}
+
 .intro-links {
   font-size: 1.3em;
 }
@@ -173,9 +183,15 @@ body {
 }
 
 .featurette-image {
-  padding: 0px;
+  /*padding: 0px;
   width: 450px;
-  height: 300px;
+  height: 300px;*/
+  width: 100%;
+  max-width: 450px;
+  max-height: 300px;
+  margin: 0 auto;
+  /*padding-top: 2cm;*/
+
 }
 
 
