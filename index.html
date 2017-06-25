@@ -1,220 +1,184 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Phil's Castle</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    
-    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
-  
-    <link rel="stylesheet" type="text/css" href="main.css">
-    
-    
-    
-</head>
-<body>
-    <header class="container">
-        <div class="row">
-            <h1 class="col-sm-8">Fei LIANG</h1>
-            <nav class="col-sm-4">
-                <a href="resume.html">link</a>
-                <p>Pictures</p>
-                <p>contact</p>
+    <title>Fei Liang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="resume.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Shrikhand" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Fei Liang</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="src/resume.pdf">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
-    </header>
-    
-<!--   cover picture   -->
-    <section class="jumbotron">
-        <div class="container">
-        </div>
-    </section>
- 
-<!--   education    -->
-    <div class="resume_block" id="education">
-        <section class="container" id="education">
-            <div class="resume_item">
-                <h3>EDUCATION</h3>
-                <hr>
-            </div>
-            <div class="education_program">
-                <p>Master of Computer Science</p>
-            </div>
-            <div class="school">
-                <p class="alignleft">Washington University in St. Louis</p>
-                <p class="alignright">October, 2016 – December, 2016</p>
-                <div style="clear:both;"></div>
-            </div>
-            <ul class="education_list">
-                <li>Concentration: Software Development, Data Science</li>
-                <li>Expected date of completion: May, 2017</li>
-                <li>Relevant Coursework: Advanced Algorithms, Machine Learning, Data Mining, Bayesian Methods in Machine Learning, Multi-Agent Systems, Cloud Computing with Big Data Applications, Database Management Systems, Video Game Programming, Mobile Application Development, Introduction to Artificial Intelligence</li>
-                <li>Cumulative GPA: 3.37/4</li>
-                <li>Certification: Certificate in Data Mining and Machine Learning</li>
-            </ul>
-        </section>
     </div>
-    
-    <div class="resume_block" id="project">
-        <section class="container">
-        <div class="resume_item" >
-            <h3>PROJECT EXPERIENCE</h3>
-            <hr>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="project_image" height=300px>
-                    <img src="https://fthmb.tqn.com/5tMZU1K1rG-l6pbcVZl59ZqEG7M=/768x0/filters:no_upscale()/about/app_store_logo-56a5342a3df78cf77286e610.jpg">
-                </figure>
-            </div>
-            
-            <div class="col-sm-8">
-                <div class="project_item">
-                    <h4>iOS Application Development</h4>
-                    <div class="project_location_time" >
-                        <p class="alignleft">Washington University in St. Louis</p>
-                        <p class="alignright">October, 2016 – December, 2016</p>
-                        <div style="clear:both;"></div>
-                    </div>
-                    <div class='project_description'>
-                        <p>An iOS and Firebase based application that allows users to give and receive ratings from others.</p>
-                    </div>
-                    <ul class='project_detail'>
-                        <li>Designed the framework and contributed more than 95% of the codes for the application.</li>
-                        <li>Accomplished syncing and storing data between clients and Realtime Database and Firebase Storage.</li>
-                        <li>Developed GPS service based on Mapkit and CoreLocation that let users interact with others.</li>
-                        <li>Implemented custom View Controllers like Table View, and developed simulated local notification.</li>
-                    </ul>
-                    <div class='project_environment'>
-                        <p><b>Environment: </b> Xcode, Firebase, Swift</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="project_image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvJQNgdNcmGPQ7-XhL__TbXNwTN6V0yc2FyXY2cwkChOorpZBYQ">
-                </figure>
-            </div>
-            
-            <div class="col-sm-8">
-                <div class="project_item">
-                    <h4>Classification and Clustering for Gene Functions</h4>
-                    <div class="project_location_time" >
-                        <p class="alignleft">Washington University in St. Louis</p>
-                        <p class="alignright">September, 2016 – December, 2016, 2016</p>
-                        <div style="clear:both;"></div>
-                    </div>
-                    <div class='project_description'>
-                        <p>Applied methods from machine learning and data mining to cluster genes with same function and make predictions.</p>
-                    </div>
-                    <ul class='project_detail'>
-                        <li>Used 7-NN to impute missing data; applied PCA, SVM and information gain to select features.</li>
-                        <li>Built models with random forest, neutral network, K-means, hierarchical clustering.</li>
-                        <li>Achieved result: 86% accuracy for classification, 62% accuracy for clustering.</li>
-                    </ul>
-                    
-                    <div class='project_environment'>
-                        <p><b>Environment: </b> Weka, Matlab, Python, Scikit</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="project_image">
-                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5UnzyALFws2KWjMBXyPevhxlDc3BbCLnDCvTk6dlpQtttcFYc">
-                </figure>
-            </div>
-            
-            <div class="col-sm-8">
-                <div class="project_item">
-                    <h4>Recommendation System Based on Netflix Rating Dataset</h4>
-                    <div class="project_location_time" >
-                        <p class="alignleft">Washington University in St. Louis</p>
-                        <p class="alignright">April, 2016 –May, 2016</p>
-                        <div style="clear:both;"></div>
-                    </div>
-                    <div class='project_description'>
-                        <p>Developed a system to recommend movies to users based on data of user-movie ratings and collaborative filtering.</p>
-                    </div>
-                    <ul class='project_detail'>
-                        <li>Used movie-movie model, normalization and pre-computation to save space and time cost.</li>
-                        <li>Implemented Pearson Correlation as similarity measure of movie-movie pairs using two MapReduce jobs.</li>
-                        <li>Applied Top-K and weighted average on similarities to make predictions.</li>
-                    </ul>
-                    
-                    <div class='project_environment'>
-                        <p><b>Environment: </b> MapReduce, Pig, Matlab, Python</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="project_image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dAPOqhPBco7fmct4uHAVHt-xEDTjhyDIUPl_-DnyGpmIK-jqpQ">
-                </figure>
-            </div>
-            
-            <div class="col-sm-8">
-                <div class="project_item">
-                    <h4>3D Video Game Development</h4>
-                    <div class="project_location_time" >
-                        <p class="alignleft">Washington University in St. Louis</p>
-                        <p class="alignright">February, 2016 – April, 2016</p>
-                        <div style="clear:both;"></div>
-                    </div>
-                    <div class='project_description'>
-                        <p>A video game that players can control the spaceship to dodge intense bullets and attack enemies.</p>
-                    </div>
-                    <ul class='project_detail'>
-                        <li>Made models for the spaceship and part of game items in Blender; created scenes for three levels in Unity3D.</li>
-                        <li>Wrote scripts to randomly generate trees in the background; implemented codes for physics effects.</li>
-                        <li>Contributed ideas and accomplished extra game elements and mechanisms.</li>
-                        <li>Involved in the playtest in St. Louis Science Center and gained feedback from people of different ages and jobs.</li>
-                    </ul>
-                    
-                    <div class='project_environment'>
-                        <p><b>Environment: </b> Unity3D, Blender, C#</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
-    
-    <div class="resume_block" id="skill">
-        <section class="container">
-        <div class="resume_item">
-            <h3>SKILLS</h3>
-            <hr>
-        </div>
-        <div class="skill_list">
-            <div class="row">
-                <h4 class="col-sm-2">Languages: </h4>
-                <p class="col-sm-10">Python(proficient), Swift, SQL, Java, C++, C#</p>
-            </div>
-        </div>
-        <div class="skill_list">
-            <div class="row">
-                <h4 class="col-sm-2">Software: </h4>
-                <p class="col-sm-10">Matlab, Xcode, Visual Studio, PyCharm, Jupyter Notebook, Sublime Text, Postgres, Pig, </p>
-            </div>
-        </div>
-    </section>
-    </div>
-    
-    
-    <script src="functions.js"></script>
-    
-</body>
 
+
+  <body>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-6 col-centered">
+          <img class="img-circle" src="src/selfie.jpg" alt="Generic placeholder image">
+          <h2>Fei Liang</h2>
+          <h3>Computer Science</h3>
+          <p>Software Engineer &amp; Machine Learning </p>
+          <p><a class="btn btn-default" href="#contact" role="button">Contact Me &raquo;</a></p>
+        </div>
+
+      </div>
+    </div>
+
+
+      <!-- START THE FEATURETTES -->
+    <div class="intro intro-project">
+        <h1>Working on ...</h1>
+      </div>
+
+    <div class="black-background">
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Machine Learning &amp; Data Mining. <span class="text-muted">It's all about data.</span></h2>
+            <!-- <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
+            <ul class="lead">
+              <li>Image Classification of Dogs and Cats using Gaussian Process</li>
+              <li>Clustering and Classification for Gene Functions</li>
+            </ul>
+          </div>
+          <div class="col-md-5 img-div align-middle">
+            <img class="featurette-image center-block" src="src/ml.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <!-- <hr class="featurette-divider"> -->
+
+        <div class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Software Development. <span class="text-muted">Applications &amp; Games</span></h2>
+            <ul class="lead">
+              <li>iOS Application Development - Rate Everyone in Your Life</li>
+              <li>3D Video Game Development - Shooting in the Space</li>
+            </ul>
+          </div>
+          <div class="col-md-5 col-md-pull-7 img-div">
+            <img class="featurette-image center-block" src="src/app.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <!-- <hr class="featurette-divider"> -->
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Big Data and Cloud Computing. <span class="text-muted">Cloud? Cluster?</span></h2>
+            <ul class="lead">
+              <li>Recommandation System Based on Netflix</li>
+              <li>Website Log File Processing</li>
+            </ul>
+          </div>
+          <div class="col-md-5 img-div">
+            <img class="featurette-image img-responsive center-block" src="src/bigdata.png" alt="Generic placeholder image">
+          </div>
+        </div>
+      </div>
+      <div class="link-detail">
+        <a href="src/resume.pdf">For more details, please check my resume</a>
+      </div>
+    </div>
+
+      <!-- /END THE FEATURETTES -->
+
+    <div class="intro intro-self">
+      <a href="#" name="about"></a>
+      <h1>About Me ... </h1>
+      <p>I just graduated from Washington University in St. Louis</p>
+      <p>My major is Computer Science, and I got the certificate in Machine Learning and Data Mining</p>
+      <p>In my free time I play table tennis and try some new techniques</p>
+      <p>Currently I am learning Spark</p>
+      <p>Life is short, I love Python</p>
+    </div>
+
+
+    <div class="black-background">
+      <div class="container">
+        <a href="#" name="contact"></a>
+        <div class="intro intro-links">
+          <h1>Links</h1>
+          <a class="link" href="mailto:liangfei@wustl.edu">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>liangfei@wustl.edu
+          </a>
+          <br>
+          <a class="link" href="tel:+13144355113">
+            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>1-(314)-435-5113
+          </a>
+          <br>
+          <a class="link" href="src/resume.pdf">
+            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>My Resume (pdf)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; Fei Liang </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
