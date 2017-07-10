@@ -36,7 +36,7 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="src/resume.pdf">Resume</a></li>
@@ -54,86 +54,89 @@
   <body>
 
 
-    <!-- Marketing messaging and featurettes
+    <!-- introduction
     ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
     <!-- breif self introduction -->
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+    <div class="container-fluid introduction">
+      <!-- brief introduction about myself -->
       <div class="row">
-        <div class="col-lg-6 col-centered">
+        <div class="col-md-6 col-centered">
           <img class="img-circle" src="src/selfie.jpg" alt="Generic placeholder image">
           <h2>Fei Liang</h2>
           <h3>Computer Science</h3>
           <p>Software Engineer &amp; Machine Learning </p>
           <p><a class="btn btn-default" href="#contact" role="button">Contact Me &raquo;</a></p>
         </div>
-
       </div>
     </div>
 
 
-    <!-- START THE FEATURETTES -->
-    <div class="intro intro-project">
-        <h1>Things I have done ...</h1>
-    </div>
-
+    <!-- introductions about my interests and knowledge-->
     <div class="black-background">
-      <div class="container-fluid marketing">
-        <div class="row featurette">
+      <div class="container-fluid introduction">
+        <div class="introduction-start" align="center">
+          <h1>What I have learned</h1>
+        </div>
+
+        <!-- machine Learning -->
+        <div class="row intro-row">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Machine Learning &amp; Data Mining. <span class="text-muted">It's all about data.</span></h2>
-            <!-- <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> -->
-            <ul class="lead">
-              <li>Image Classification of Dogs and Cats using Gaussian Process</li>
-              <li>Clustering and Classification for Gene Functions</li>
-              <li>...</li>
-            </ul>
+            <h2 class="introduction-heading">Machine Learning
+              <span class="text-muted">Machine Learning &amp; Data Mining &amp; Deep Learning </span>
+            </h2>
           </div>
           <div class="col-md-5 img-div align-middle">
-            <img class="featurette-image center-block" src="src/ml.png" alt="Generic placeholder image">
+            <img class="introduction-image center-block" src="src/ml.png" alt="Generic placeholder image">
           </div>
         </div>
 
-        <!-- <hr class="featurette-divider"> -->
-
-        <div class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Software Development. <span class="text-muted">Applications &amp; Games</span></h2>
-            <ul class="lead">
-              <li>iOS Application Development - Rate Everyone in Your Life</li>
-              <li>3D Video Game Development - Shooting in the Space</li>
-              <li>...</li>
-            </ul>
+        <!-- <hr class="intro-row-divider"> -->
+        <!-- big data -->
+        <div class="row intro-row">
+          <div class="col-md-7 col-md-push-5 text-right">
+            <h2 class="introduction-heading">Big Data and Cloud Computing.
+              <span class="text-muted">MapReduce &amp; Spark</span>
+            </h2>
           </div>
           <div class="col-md-5 col-md-pull-7 img-div">
-            <img class="featurette-image center-block" src="src/app.png" alt="Generic placeholder image">
+            <img class="introduction-image img-responsive center-block" src="src/bigdata.png" alt="Generic placeholder image">
           </div>
         </div>
 
-        <!-- <hr class="featurette-divider"> -->
-
-        <div class="row featurette">
+        <!-- <hr class="intro-row-divider"> -->
+        <!-- full stack -->
+        <div class="row intro-row">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Big Data and Cloud Computing. <span class="text-muted">Cloud? Cluster?</span></h2>
-            <ul class="lead">
-              <li>Recommandation System Based on Netflix</li>
-              <li>Website Log File Processing</li>
-              <li>...</li>
-            </ul>
+            <h2 class="introduction-heading">Full Stack Web Development.
+              <span class="text-muted">Django &amp; HTML &amp; css &amp; JQuery</span>
+            </h2>
           </div>
           <div class="col-md-5 img-div">
-            <img class="featurette-image img-responsive center-block" src="src/bigdata.png" alt="Generic placeholder image">
+            <img class="introduction-image img-responsive center-block" src="src/web.png" alt="Generic placeholder image">
           </div>
         </div>
+
+        <!-- <hr class="intro-row-divider"> -->
+        <!-- ios and game -->
+        <div class="row intro-row">
+          <div class="col-md-7 col-md-push-5 text-right">
+            <h2 class="introduction-heading">Software Development.
+              <span class="text-muted">iOS Applications &amp; Video Games</span>
+            </h2>
+          </div>
+          <div class="col-md-5 col-md-pull-7 img-div">
+            <img class="introduction-image center-block" src="src/app.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+
       </div>
-      <div class="link-detail">
+      <!-- <div class="link-detail">
         <a href="src/resume.pdf">For more details, please check my resume</a>
-      </div>
+      </div> -->
     </div>
 
-      <!-- /END THE FEATURETTES -->
+      <!-- /END THE intro-rowS -->
 
     <!-- introduction about myself -->
     <div class="intro intro-self">
@@ -167,8 +170,8 @@
       </div>
     </div>
 
-    <div class="container marketing">
-      <!-- FOOTER -->
+    <div class="container">
+ intro-rowFOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Fei Liang </p>

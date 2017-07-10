@@ -50,7 +50,8 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.marketing {
+
+.introduction {
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 
-/* MARKETING CONTENT
+/* Self CONTENT
 -------------------------------------------------- */
 .col-centered{
     float: none;
@@ -72,28 +73,29 @@ body {
   text-align: center;
 }
 
-.marketing {
+.introduction {
   text-align: left;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   margin-left: 60px;
   margin-right: 60px;
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .img-circle {
+.introduction .img-circle {
   width: 360px;
   height: 360px;
 }
 
-.marketing .col-lg-6 {
+.introduction .col-md-6 {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
+.introduction h2 {
   font-size: 6em;
   font-weight: normal;
 }
-.marketing .col-lg-6 p {
+.introduction .col-md-6 p {
   font-size: 1.5em;
   margin-right: 10px;
   margin-left: 10px;
@@ -110,7 +112,7 @@ body {
 }
 
 /*introduction
-------------------------*/
+===================================*/
 
 .intro {
   width: 100%;
@@ -129,6 +131,18 @@ body {
   color: white;
 }
 
+/*introduction about my interests and knowledge
+------------------------------------------------*/
+.introduction-start {
+  color: white;
+}
+
+
+
+
+
+/*introduction about myself
+-------------------------------------*/
 .intro-self {
   margin-top: 50px;
   background-color: white;
@@ -154,15 +168,15 @@ body {
 
 
 
-/* Featurettes
+/* intro-rows
 ------------------------- */
 
-.featurette-divider {
+.intro-row-divider {
   margin: 10px 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
+/* Thin out the introduction headings */
+.introduction-heading {
   color: white;
   font-size: 30px;
   font-weight: 200;
@@ -176,17 +190,18 @@ body {
 }
 
 .img-div {
-  margin-top: 180px;
+  margin-top: 10%;
   /*margin-top: 20%;*/
   /*border: 10px solid black;*/
 
 }
 
-.featurette-image {
+.introduction-image {
   /*padding: 0px;
   width: 450px;
   height: 300px;*/
   width: 100%;
+  min-width: 300px;
   max-width: 450px;
   max-height: 300px;
   margin: 0 auto;
@@ -224,13 +239,13 @@ body {
     line-height: 1.4;
   }
 
-  .featurette-heading {
+  .introduction-heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
+  .introduction-heading {
     margin-top: 120px;
   }
 }
