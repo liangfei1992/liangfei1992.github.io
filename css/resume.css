@@ -145,13 +145,13 @@ body {
 -------------------------------------*/
 .intro-self {
   margin-top: 50px;
-  background-color: white;
   padding-bottom: 50px;
+  color: white;
 }
 
-.intro-self h1 {
+/*.intro-self h1 {
   color: #333333;
-}
+}*/
 
 .intro-self p {
   font-size: 1.3em;
