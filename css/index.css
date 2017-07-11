@@ -45,19 +45,25 @@ body {
 
 /*font set
 --------------------------------------------------- */
-.navbar-wrapper {
+.navbar-wrapper,
+.introduction,
+.intro,
+.intro-skills{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-.introduction {
-  font-family: 'Josefin Sans', sans-serif;
+.text-muted {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
-.intro {
-  font-family: 'Josefin Sans', sans-serif;
+.intro-self p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: lighter;
+  word-spacing: 5px;
 }
-
 
 /* Self CONTENT
 -------------------------------------------------- */
@@ -68,7 +74,7 @@ body {
 
 .black-background {
   background-color: #333333;
-  padding-bottom:6%;
+  padding-bottom:3%;
   text-align: center;
 }
 
@@ -82,8 +88,9 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .introduction .img-circle {
-  width: 360px;
-  height: 360px;
+  border: 6px #333333 solid;
+  width: 60%;
+  height: 60%;
 }
 
 .introduction .col-md-6 {
@@ -144,8 +151,13 @@ body {
   margin-right: 10%;
 }
 
+.intro-skills h1 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
 .skill-li {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .divider-vertical {
@@ -165,6 +177,7 @@ body {
 -------------------------------------*/
 .intro-self {
   padding-top: 6%;
+  padding-bottom: 3%;
   color: white;
 }
 
@@ -172,9 +185,6 @@ body {
   color: #333333;
 }*/
 
-.intro-self p {
-  font-size: 2em;
-}
 
 
 /*links
@@ -231,7 +241,7 @@ footer p{
 }
 
 .img-div {
-  margin-top: 10%;
+  margin-top: 6%;
   /*margin-top: 20%;*/
   /*border: 10px solid black;*/
 
