@@ -4,12 +4,11 @@
 
 body {
   padding-top: 100px;
-  padding-bottom: 60px;
   margin-left: 0px;
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  color: #5a5a5a;
+  /*color: #333333;*/
   /*background-color: black;*/
 }
 
@@ -69,7 +68,7 @@ body {
 
 .black-background {
   background-color: #333333;
-  padding-bottom: 50px;
+  padding-bottom:6%;
   text-align: center;
 }
 
@@ -92,7 +91,7 @@ body {
   text-align: center;
 }
 .introduction h2 {
-  font-size: 6em;
+  font-size: 5em;
   font-weight: normal;
 }
 .introduction .col-md-6 p {
@@ -137,15 +136,35 @@ body {
   color: white;
 }
 
+/*introduction about my skills*/
+.intro-skills {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
+.skill-li {
+  margin-top: 5%;
+}
 
+.divider-vertical {
+    height: 100px;                   /* any height */
+    border-left: 1px solid gray;     /* right or left is the same */
+    float: left;                     /* so BS grid doesn't break */
+    opacity: 0.5;                    /* optional */
+    margin: 0 15px;                  /* optional */
+}
+
+.progress-bar-custom {
+  background-color: #333333;
+}
 
 
 /*introduction about myself
 -------------------------------------*/
 .intro-self {
-  margin-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 6%;
   color: white;
 }
 
@@ -154,17 +173,39 @@ body {
 }*/
 
 .intro-self p {
-  font-size: 1.3em;
+  font-size: 2em;
 }
 
-.intro-links {
-  font-size: 1.3em;
+
+/*links
+-------------------------------------*/
+.intro-link {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  background-color: white;
+  text-align: center;
+  font-size: 2em;
 }
+
 
 .glyphicon {
   margin-right: 8px;
   padding-top: 10px;
 }
+
+/*footer
+-------------------------------------*/
+footer p{
+  font-size: 1em;
+  color: white;
+}
+
+.go-top .glyphicon {
+  margin-top: 6%;
+  font-size: 2em;
+  color: white;
+}
+
 
 
 
