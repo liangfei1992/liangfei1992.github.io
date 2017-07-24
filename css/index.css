@@ -88,7 +88,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .introduction .img-circle {
-  border: 6px #333333 solid;
+  /*border: 6px #333333 solid;*/
   width: 60%;
   height: 60%;
 }

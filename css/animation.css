@@ -1,0 +1,29 @@
+/*change introduction image border style*/
+.introduction .img-circle {
+  animation: changeBorder 6s infinite;
+  -webkit-animation: changeBorder 6s infinite;
+}
+
+@keyframes changeBorder {
+  0% {
+    border: 8px #333333 solid;
+  }
+  50% {
+    border: 8px #ffffff solid;
+  }
+  100% {
+    border: 8px #333333 solid;
+  }
+}
+
+@-webkit-keyframes hangeBorder {
+  0% {
+    border: 8px #333333 solid;
+  }
+  50% {
+    border: 8px #ffffff solid;
+  }
+  100% {
+    border: 8px #333333 solid;
+  }
+}
