@@ -42,6 +42,24 @@ body {
   padding-right: 10px;
 }
 
+#skills-link:before{
+  padding-top:100px;
+  display:block;
+  content:"";
+}
+
+#about-link:before{
+  padding-top:100px;
+  display:block;
+  content:"";
+}
+
+#contact-link:before{
+  padding-top:20px;
+  display:block;
+  content:"";
+}
+
 
 /*font set
 --------------------------------------------------- */
