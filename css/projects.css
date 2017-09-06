@@ -37,6 +37,7 @@ video {
 
 .video-player {
   padding: 0px;
+  max-height: 50%;
 }
 
 .caption {
