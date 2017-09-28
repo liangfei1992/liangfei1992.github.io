@@ -31,10 +31,11 @@
 
                 <div class="profile container" ng-controller="profile">
                     <div class="card text-center no-border">
-                        <img class="card-img-top rounded-circle img-responsive profile-image mx-auto" src="resources/profile.jpg" width="100%">
+                        <img class="card-img-top rounded-circle img-responsive profile-image mx-auto" src="resources/images/profile.jpg" width="100%">
                         <div class="card-body">
                             <h2 class="card-title">{{ name }}</h2>
                             <h6 class="text-muted" ng>{{ generateFieldsString() }}</h6>
+                            <span ng-repeat="resume in resumes"><a href="{{ resume.url }}" class="badge blue-badge">{{ resume.name }}</a></span>
                         </div>
                     </div>
                 </div>

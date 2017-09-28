@@ -3,6 +3,11 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.profile .card span {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 .contact {
     font-family: 'Josefin Sans', sans-serif;
 }

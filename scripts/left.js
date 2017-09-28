@@ -9,6 +9,16 @@ indexBody.controller("profile", function($scope){
         fieldsString = fieldsString.slice(0, -3);
         return fieldsString
     };
+    $scope.resumes = [
+        {
+            name: "PDF",
+            url: "resources/Fei_Liang_Resume.pdf",
+        },
+        {
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/in/fei-liang-69b591130/",
+        },
+    ]
 })
 
 indexBody.controller("contacts",function($scope){

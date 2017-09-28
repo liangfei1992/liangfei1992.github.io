@@ -9,11 +9,12 @@ indexBody.controller("aboutme", function($scope){
 })
 
 indexBody.controller("projects", function($scope){
+    $scope.imageUrl = "resources/images/"
     $scope.projects = [
         {
             title: "Machine Learning",
             description: "Machine Learning & Data Mining & Deep Learning",
-            imageAddress: "resources/ml.png",
+            imageAddress: $scope.imageUrl + "ml.png",
             projects: [
                 {
                     name: "Image Classification of Dogs and Cats using Gaussian Process",
@@ -28,7 +29,7 @@ indexBody.controller("projects", function($scope){
         {
             title: "Software Development",
             description: "iOS Applications & Video Games",
-            imageAddress: "resources/app.png",
+            imageAddress: $scope.imageUrl + "app.png",
             projects: [
                 {
                     name: "Rate Y: iOS Application Development",
@@ -59,7 +60,7 @@ indexBody.controller("projects", function($scope){
         {
             title: "Full Stack Web Development",
             description: "Django & HTML & CSS & jQuery",
-            imageAddress: "resources/web.png",
+            imageAddress: $scope.imageUrl + "web.png",
             projects: [
                 {
                     name: "Star Social: Website Development",
@@ -74,7 +75,7 @@ indexBody.controller("projects", function($scope){
         {
             title: "Big Data and Cloud Computing",
             description: "MapReduce & Spark",
-            imageAddress: "resources/bigdata.png",
+            imageAddress: $scope.imageUrl + "bigdata.png",
             projects: [
                 {
                     name: "Spam Detection Filter",
