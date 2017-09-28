@@ -173,5 +173,35 @@ indexBody.controller("skills", function($scope){
                 },
             ]
         },
+        {
+            skillName: "Full Stack Web Development",
+            skills: [
+                {
+                    skill: "HTML",
+                    percents: 40,
+                    color: "bg-danger",
+                },
+                {
+                    skill: "CSS",
+                    percents: 20,
+                    color: "bg-warning",
+                },
+                {
+                    skill: "JavaScript",
+                    percents: 8,
+                    color: "bg-info",
+                },
+                {
+                    skill: "jQuery",
+                    percents: 8,
+                    color: "bg-primary",
+                },
+                {
+                    skill: "angularjs",
+                    percents: 15,
+                    color: "bg-success",
+                },
+            ]
+        },
     ]
 })

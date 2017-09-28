@@ -18,6 +18,11 @@ demoBody.controller("demos", function($scope){
             url: $scope.demoAddress + "Rate Y.mov",
             poster: $scope.demoAddress + "Rate Y Cover.png"
         },
+        {
+            name: "Pokedex",
+            url: $scope.demoAddress + "pokedex.MP4",
+            poster: null,
+        },
     ]
 
 })
