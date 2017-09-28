@@ -1,325 +1,60 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+@import "left.css";
+@import "right.css";
+@import "other.css";
+
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow: hidden;
+}
 
 body {
-  padding-top: 100px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  /*color: #333333;*/
-  /*background-color: black;*/
+    overflow: auto;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height:1.5em;
+    word-spacing: 0.3em;
 }
 
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
+.container-fluid,
+.left-panel,
+.right-panel {
+    height: 100%;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
+/*left panel and right panel scroll*/
+@media (min-width: 768px){
+  .left-panel {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+  }
 
-.navbar-right {
-  padding-right: 10px;
-}
-
-#skills-link:before{
-  padding-top:100px;
-  display:block;
-  content:"";
+  .right-panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+  }
 }
 
-#about-link:before{
-  padding-top:100px;
-  display:block;
-  content:"";
-}
-
-#contact-link:before{
-  padding-top:20px;
-  display:block;
-  content:"";
-}
-
-
-/*font set
---------------------------------------------------- */
-.navbar-wrapper,
-.introduction,
-.intro,
-.intro-skills{
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.text-muted {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
-  font-weight: 300;
-}
-
-.intro-self p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.3em;
-  font-weight: lighter;
-  word-spacing: 5px;
-}
-
-/* Self CONTENT
--------------------------------------------------- */
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
-
-.black-background {
-  background-color: #333333;
-  padding-bottom:3%;
-  text-align: center;
-}
-
-.introduction {
-  text-align: left;
-  margin-top: 1%;
-  margin-bottom: 00px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-/* Center align the text within the three columns below the carousel */
-.introduction .img-circle {
-  /*border: 6px #333333 solid;*/
-  width: 60%;
-  height: 60%;
-}
-
-.introduction .col-md-6 {
-  margin-bottom: 0px;
-  text-align: center;
-}
-.introduction h2 {
-  font-size: 3em;
-  font-weight: normal;
-  margin-top: 10%;
-}
-.introduction .col-md-6 p {
-  font-size: 1.5em;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.link-detail {
-  /*border: white solid 10px;*/
-  color:white;
-  font-size: 1.3em;
-}
-
-.link-detail a {
-  color: white;
-}
-
-/*introduction
-===================================*/
-
-.intro {
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 10%;
-  padding-left:  20px;
-  padding-top: 10%;
-  padding-bottom: 30px;
-  background-color: #333333;
-  text-align: center;
-  /*background: linear-gradient(to right, black , gray)*/
-}
-
-.intro h1 {
-  color: white;
-}
-
-/*introduction about my interests and knowledge
-------------------------------------------------*/
-.introduction-start {
-  color: white;
-  margin-bottom: 5%;
-}
-
-/*introduction about my skills*/
-.intro-skills {
-  margin-top: 1%;
-  margin-bottom: 6%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.intro-skills h1 {
-  font-weight: bold;
-  font-size: 3em;
-}
-
-.skill-li {
-  margin-top: 3%;
-}
-
-.divider-vertical {
-    height: 100px;                   /* any height */
-    border-left: 1px solid gray;     /* right or left is the same */
-    float: left;                     /* so BS grid doesn't break */
-    opacity: 0.5;                    /* optional */
-    margin: 0 15px;                  /* optional */
-}
-
-.progress-bar-custom {
-  background-color: #333333;
-}
-
-
-/*introduction about myself
--------------------------------------*/
-.intro-self {
-  padding-top: 1%;
-  padding-bottom: 3%;
-  color: white;
-}
-
-/*.intro-self h1 {
-  color: #333333;
-}*/
-
-
-
-/*links
--------------------------------------*/
-.intro-link {
-  margin-top: 1%;
-  margin-bottom: 6%;
+.left-panel {
   background-color: white;
   text-align: center;
-  font-size: 1.3em;
+  height:100%;
 }
 
-
-.glyphicon {
-  margin-right: 8px;
-  padding-top: 10px;
+.right-panel {
+  height:100%;
+  background-color: #3d3e42;
 }
 
-/*footer
--------------------------------------*/
-footer p{
-  font-size: 1em;
-  color: white;
-}
-
-.go-top .glyphicon {
-  margin-top: 6%;
-  font-size: 2em;
-  color: white;
-}
-
-
-
-
-/* intro-rows
-------------------------- */
-
-.intro-row-divider {
-  margin: 10px 0; /* Space out the Bootstrap <hr> more */
-}
-
-.intro-row {
-  margin: 0px;
-  padding: 0px;
-  /*border: white 1px solid;*/
-}
-
-.introduction-learned .row {
-  margin: 0px;
-}
-
-.introduction-heading {
-  color: white;
-}
-
-.lead {
-  font-size: 2em;
-  color: white;
-}
-
-.introduction-image {
-  max-width: 80%;
-  /*margin-top: 5%;*/
-
-  /*width: 100%;
-  min-width: 300px;
-  max-width: 450px;
-  max-height: 300px;
-  margin: 0 auto;*/
-}
-
-.img-overlay {
-  /*border: 1px solid white;*/
-}
-
-.img-overlay-text {
-  /*border: 1px solid white;*/
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .introduction-heading {
-    font-size: 1em;
-  }
-}
-
-@media (min-width: 992px) {
-  .introduction-heading {
-    margin-top: 120px;
-  }
+.progress-bar {
+    text-align: center;
 }

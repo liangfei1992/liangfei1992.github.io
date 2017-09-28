@@ -1,366 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
     <title>Fei Liang</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Josefin+Sans|Shrikhand|Cabin|Roboto|Open+Sans" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="css/progress.css">
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/index.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Josefin+Sans|Shrikhand|Cabin|Roboto|Open+Sans:300,400" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
-    <div class="navbar-wrapper">
-        <div class="container">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Fei Liang</a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#skills-link">Skills</a></li>
-                            <li><a href="Pages/Projects.html">Projects</a></li>
-                            <li><a href="#about-link">About Me</a></li>
-                            <li><a href="#contact-link">Contact</a></li>
-                            <li><a href="src/resume.pdf">Resume</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="index_chinese.html">中文</a></li>
-                        </ul>
+
+
+  <body ng-app="indexBody" >
+      <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="scripts/indexApp.js"></script>
+    <script src="scripts/left.js"></script>
+    <script src="scripts/right.js"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+
+<!-- left panel -->
+            <div class="col-md-4 left-panel .align-middle">
+
+                <div class="profile container" ng-controller="profile">
+                    <div class="card text-center no-border">
+                        <img class="card-img-top rounded-circle img-responsive profile-image mx-auto" src="resources/profile.jpg" width="100%">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ name }}</h2>
+                            <h6 class="text-muted" ng>{{ generateFieldsString() }}</h6>
+                        </div>
                     </div>
                 </div>
-            </nav>
+
+                <div class="contact" ng-controller="contacts">
+                    <div class="row container">
+                        <div class="col-md-3">
+                            <ul>
+                                <li ng-repeat="(key, val) in contactInfo"><b>{{ key }}</b></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-1"></div>
+
+                        <div class="col-md-7 text-left">
+                            <ul>
+                                <li ng-repeat="(key, val) in contactInfo">{{ val }}</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+<!-- right panel -->
+            <div class="col-md-8 right-panel">
+
+                <!-- about me description -->
+                <div class="container aboutme" ng-controller="aboutme">
+                    <h5>ABOUT ME</h5>
+                    <p ng-repeat="x in aboutme">{{ x }}</p>
+                </div>
+
+                <!-- projects description -->
+                <div class="container projects" ng-controller="projects">
+
+                    <h5>EXPERIENCES</h5>
+
+                    <div class="card-columns black-background">
+
+                        <div class="card black-background white-border" ng-repeat="project in projects">
+                            <img class="card-img-top img-responsive mx-auto" ng-src="{{ project.imageAddress }}" alt="">
+                            <div class="card-body black-background">
+                                <h4 class="card-title">{{ project.title }}</h4>
+                                <h5 class="text-muted">{{ project.description }}</h5>
+                            </div>
+                            <ul class="list-group list-group-flush white-background">
+                                <li class="list-group-item white-background" ng-repeat=" p in project.projects "><a href="{{ p.url }}">{{ p.name }}</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div> <!--projects container div end -->
+
+                <div class="container skills" ng-controller="skills">
+                    <h5>SKILLS</h5>
+
+                    <div class="skill" ng-repeat="skill in skills">
+                        <h6>{{ skill.skillName }}</h6>
+                        <div class="progress">
+                            <div class="progress-bar" ng-repeat="s in skill.skills" ng-class="s.color" role="progressbar" style="width: {{s.percents}}%" aria-valuenow="{{s.percents}}" aria-valuemin="0" aria-valuemax="100">{{ s.skill }}</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div> <!-- right-panel div end -->
+
         </div>
+
     </div>
-
-
-  <body>
-
-
-    <!-- introduction
-    ================================================== -->
-    <!-- breif self introduction -->
-    <div class="container-fluid introduction">
-      <!-- brief introduction about myself -->
-      <div class="row">
-        <div class="col-md-6 col-centered">
-          <img class="img-circle" src="src/selfie.jpg" alt="Generic placeholder image">
-          <h2>Fei Liang</h2>
-          <h3>Computer Science</h3>
-          <p>Software Engineer &amp; Machine Learning </p>
-          <p><a class="btn btn-default btn-animation" href="#contact-link" role="button">
-            <span>Contact Me</span>
-          </a></p>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- introductions about my interests and knowledge-->
-    <div class="black-background">
-      <div class="container-fluid introduction introduction-learned">
-        <div class="introduction-start" align="center">
-          <h1>What I have learned (and done)</h1>
-        </div>
-
-        <!-- machine Learning -->
-        <div class="row intro-row">
-          <div class="col-md-6">
-            <h2 class="introduction-heading">Machine Learning
-              <span class="text-muted">Machine Learning &amp; Data Mining &amp; Deep Learning </span>
-            </h2>
-          </div>
-          <div class="col-md-3 img-div align-middle">
-            <img class="introduction-image center-block" src="src/ml.png" alt="ml">
-            <div class="img-overlay">
-              <div class="img-overlay-text">
-                <ul>
-                  <li>Image Classification of Dogs and Cats using Gaussian Process</li>
-                  <li>Clustering and Classification for Gene Functions</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <hr class="intro-row-divider"> -->
-        <!-- big data -->
-        <div class="row intro-row">
-          <div class="col-md-6 col-md-push-6 text-right">
-            <h2 class="introduction-heading">Big Data and Cloud Computing.
-              <span class="text-muted">MapReduce &amp; Spark</span>
-            </h2>
-          </div>
-          <div class="col-md-3 col-md-pull-4 img-div">
-            <img class="introduction-image img-responsive center-block" src="src/bigdata.png" alt="bigdata">
-            <div class="img-overlay">
-              <div class="img-overlay-text">
-                <ul>
-                  <li>Spam Detection Filter</li>
-                  <li>Recommendation System Based on Netflix Rating Dataset </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <hr class="intro-row-divider"> -->
-        <!-- full stack -->
-        <div class="row intro-row">
-          <div class="col-md-6">
-            <h2 class="introduction-heading">Full Stack Web Development.
-              <span class="text-muted">Django &amp; HTML &amp; CSS &amp; jQuery</span>
-            </h2>
-          </div>
-          <div class="col-md-3 img-div">
-            <img class="introduction-image img-responsive center-block" src="src/web.png" alt="Web">
-            <div class="img-overlay">
-              <div class="img-overlay-text">
-                <ul>
-                  <li>Star Social: Website Development</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <hr class="intro-row-divider"> -->
-        <!-- ios and game -->
-        <div class="row intro-row">
-          <div class="col-md-6 col-md-push-6 text-right heading-div">
-            <h2 class="introduction-heading">Software Development.
-              <span class="text-muted">iOS Applications &amp; Video Games</span>
-            </h2>
-          </div>
-          <div class="col-md-3 col-md-pull-4 img-div">
-            <img class="introduction-image center-block" src="src/app.png" alt="Generic placeholder image">
-            <div class="img-overlay">
-              <div class="img-overlay-text">
-                <ul>
-                  <li>Rate Y: iOS Application Development</li>
-                  <li>Scarlet Devil: 3D Video Game Development </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- <div class="link-detail">
-        <a href="src/resume.pdf">For more details, please check my resume</a>
-      </div> -->
-    </div>
-
-    <!-- <a href="#" name="skills"></a> -->
-    <div class="intro-skills">
-      <div class="container-fluid">
-        <div class="row">
-          <h1 id="skills-link" align='center'>Skills</h1>
-        </div>
-
-        <div class="row skill-li">
-          <div class="col-md-2"></div>
-          <div class="col-md-4">
-            <h2>Machine Learning</h2>
-            <div class="progress-radial progress-90">
-              <div class="overlay">90%</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3>Python</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                <span class="sr-only">90% Complete (success)</span>
-              </div>
-            </div>
-            <h3>R</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                <span class="sr-only">50% Complete</span>
-              </div>
-            </div>
-            <h3>MATLAB</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                <span class="sr-only">60% Complete (warning)</span>
-              </div>
-            </div>
-            <h3>Spark</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                <span class="sr-only">70% Complete (warning)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row skill-li">
-          <div class="col-md-2"></div>
-          <div class="col-md-4">
-            <h2>MapReduce &amp; Spark</h2>
-            <div class="progress-radial progress-80">
-              <div class="overlay">85%</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3>MapReduce</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                <span class="sr-only">50% Complete (success)</span>
-              </div>
-            </div>
-            <h3>Hadoop Streaming &amp; Python</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                <span class="sr-only">90% Complete</span>
-              </div>
-            </div>
-            <h3>PySpark</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                <span class="sr-only">70% Complete (warning)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row skill-li">
-          <div class="col-md-2"></div>
-          <div class="col-md-4">
-            <h2>Full Stack Web Development</h2>
-            <div class="progress-radial progress-70">
-              <div class="overlay">65%</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3>HTML</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                <span class="sr-only">80% Complete (success)</span>
-              </div>
-            </div>
-            <h3>CSS</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                <span class="sr-only">70% Complete (success)</span>
-              </div>
-            </div>
-            <h3>JavaScript/jQuery</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                <span class="sr-only">60% Complete (success)</span>
-              </div>
-            </div>
-            <h3>Django</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                <span class="sr-only">50% Complete (success)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row skill-li">
-          <div class="col-md-2"></div>
-          <div class="col-md-4">
-            <h2>Software Development</h2>
-            <div class="progress-radial progress-70">
-              <div class="overlay">70%</div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h3>Swift</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                <span class="sr-only">80% Complete (success)</span>
-              </div>
-            </div>
-            <h3>Unity3D</h3>
-            <div class="progress">
-              <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                <span class="sr-only">60% Complete (success)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-      <!-- /END THE intro-rowS -->
-
-    <!-- introduction about myself -->
-    <div class="black-background">
-      <div class="intro intro-self">
-        <h1 id="about-link">About Me ... </h1>
-        <p>I graduated from Washington University in St. Louis this year (2017)</p>
-        <p>My major is Computer Science, and I got the certificate in Machine Learning and Data Mining</p>
-        <p>In my free time I play table tennis and try some new techniques</p>
-        <p>Currently I am learning more about Spark and iOS</p>
-        <p>Life is short, I love Python</p>
-      </div>
-    </div>
-
-
-    <!-- links -->
-    <div class="intro-link">
-      <div class="container">
-        <!-- <div class="intro"> -->
-          <h1 id="contact-link">Links</h1>
-          <a class="link" href="mailto:liangfei@wustl.edu">
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>liangfei@wustl.edu
-          </a>
-          <br>
-          <a class="link" href="tel:+13144355113">
-            <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>1-(314)-435-5113
-          </a>
-          <br>
-          <a class="link" href="src/resume.pdf">
-            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>My Resume (pdf)
-          </a>
-        <!-- </div> -->
-      </div>
-    </div>
-
-    <div class="black-background bottom">
-      <div class="container">
-   <!-- intro-rowFOOTER -->
-        <footer>
-          <p class="pull-right go-top"><a href="#">
-            <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true">
-            </span></a></p>
-          <p class="pull-left">&copy; Fei Liang</p>
-        </footer>
-
-      </div><!-- /.container -->
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="scripts/jquery.min.js"><\/script>')</script>
-    <script src="scripts/bootstrap.min.js"></script>
-  </body>
 </html>

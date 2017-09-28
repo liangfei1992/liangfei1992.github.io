@@ -1,0 +1,66 @@
+.right-panel {
+    color: white;
+}
+
+.aboutme,
+.projects,
+.skills {
+    margin-top: 3%;
+    margin-bottom: 6%;
+    margin-left: 1%;
+    padding-right: 5%;
+
+}
+
+h5 {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: #8bc7ed;
+}
+
+.aboutme p {
+    margin-bottom: 0.2em;
+}
+
+.card-columns {
+    background-color: #333333;
+    column-count: 2;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img {
+    margin-top: 5%;
+}
+
+.card ul {
+    text-align: left;
+    color: #3d3e42;
+    font-size: 0.8em;
+}
+
+.card li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #3d3e42;
+}
+
+.card a {
+    color: #3d3e42;
+}
+
+.card-body {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.card-body .text-muted{
+    color: #eaeaea;
+    font-size: 1em;
+}
+
+.skill {
+    margin-bottom: 3%;
+}

@@ -1,0 +1,27 @@
+.black-border {
+    border: #3d3e42 2px solid;
+}
+
+.white-border {
+    border: white 4px solid;
+}
+
+.red-border {
+    border: red 2px solid;
+}
+
+.yellow-border {
+    border: yellow 2px solid;
+}
+
+.green-border {
+    border: green 2px solid;
+}
+
+.no-border {
+    border: 0px;
+}
+
+.black-background{
+    background-color:#3d3e42;
+}

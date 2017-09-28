@@ -1,0 +1,22 @@
+.profile {
+    margin-top: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.profile-image {
+    max-width: 50%;
+    margin-bottom: 10%;
+    border: #3d3e42 solid 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.contact {
+    margin-top: 10%;
+}
