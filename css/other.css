@@ -2,7 +2,7 @@
     border: #4c4d52 2px solid;
 }
 
-.white-border {
+.white-border-bold {
     border: white 4px solid;
 }
 
@@ -24,4 +24,20 @@
 
 .black-background{
     background-color: #4c4d52;
+}
+
+.danger-border {
+    border: #ff4444 2px solid;
+}
+
+.primary-border {
+    border: #4285F4 2px solid;
+}
+
+.default-border {
+    border: #2BBBAD 2px solid;
+}
+
+.unique-border {
+    border: #3F729B 4px solid;
 }

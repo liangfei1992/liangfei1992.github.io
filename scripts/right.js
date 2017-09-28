@@ -22,7 +22,7 @@ indexBody.controller("projects", function($scope){
                 {
                     name: "Clustering and Classification for Gene Functions",
                     url: "#",
-                }
+                },
             ]
         },
         {
@@ -38,6 +38,22 @@ indexBody.controller("projects", function($scope){
                     name: "MFPS Game Development: Run Joey! Run!",
                     url: "https://github.com/lfdyf20/Run-Joey-Run",
                 },
+                {
+                    name: "Pokedex",
+                    url: "https://github.com/lfdyf20/Pokedex",
+                },
+                {
+                    name: "DreamLister",
+                    url: "https://github.com/lfdyf20/DreamLister"
+                },
+                {
+                    name: "Learn Japanese",
+                    url: "https://github.com/lfdyf20/LearnJapaneseApp"
+                },
+                {
+                    name: "Rock-Scissors-Paper",
+                    url: "https://github.com/lfdyf20/TryTkinter-Rock-Paper-Scissors-Game"
+                }
             ]
         },
         {
@@ -48,7 +64,11 @@ indexBody.controller("projects", function($scope){
                 {
                     name: "Star Social: Website Development",
                     url: "#",
-                }
+                },
+                {
+                    name: "Profile Web",
+                    url: "https://liangfei1992.github.io/"
+                },
             ]
         },
         {
@@ -122,8 +142,13 @@ indexBody.controller("skills", function($scope){
                 },
                 {
                     skill: "Unity",
-                    percents: 40,
+                    percents: 35,
                     color: "bg-warning",
+                },
+                {
+                    skill: "Python",
+                    percents: 5,
+                    color: "bg-info",
                 }
             ]
         },

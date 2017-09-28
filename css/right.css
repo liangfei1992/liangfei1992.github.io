@@ -31,6 +31,10 @@ h5 {
     text-align: center;
 }
 
+.card.white-border:hover {
+    border: #8bc7ed solid 4px;
+}
+
 .card img {
     margin-top: 5%;
 }
