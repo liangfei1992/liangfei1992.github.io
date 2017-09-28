@@ -41,3 +41,7 @@
 .unique-border {
     border: #3F729B 4px solid;
 }
+
+.white-text {
+    color: white;
+}

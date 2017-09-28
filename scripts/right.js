@@ -53,7 +53,7 @@ indexBody.controller("projects", function($scope){
                 {
                     name: "Rock-Scissors-Paper",
                     url: "https://github.com/lfdyf20/TryTkinter-Rock-Paper-Scissors-Game"
-                }
+                },
             ]
         },
         {

@@ -85,6 +85,9 @@
                             <ul class="list-group list-group-flush white-background">
                                 <li class="list-group-item white-background" ng-repeat=" p in project.projects "><a href="{{ p.url }}">{{ p.name }}</a></li>
                             </ul>
+                            <div class="card-body black-background" ng-if=" project.title === 'Software Development' ">
+                                <a href="demo.html" class="card-link white-text">DEMO</a>
+                            </div>
                         </div>
 
                     </div>

@@ -51,13 +51,18 @@ h5 {
     color: #4c4d52;
 }
 
-.card a {
+.card li a {
     color: #4c4d52;
 }
 
 .card-body {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.card-link:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .projects .text-muted-my{
