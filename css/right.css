@@ -23,7 +23,7 @@ h5 {
 }
 
 .card-columns {
-    background-color: #333333;
+    background-color: #4c4d52;
     column-count: 2;
 }
 
@@ -37,18 +37,18 @@ h5 {
 
 .card ul {
     text-align: left;
-    color: #3d3e42;
+    color: #4c4d52;
     font-size: 0.8em;
 }
 
 .card li {
     padding-top: 1%;
     padding-bottom: 1%;
-    color: #3d3e42;
+    color: #4c4d52;
 }
 
 .card a {
-    color: #3d3e42;
+    color: #4c4d52;
 }
 
 .card-body {
@@ -56,8 +56,8 @@ h5 {
     margin-bottom: 2%;
 }
 
-.card-body .text-muted{
-    color: #eaeaea;
+.projects .text-muted-my{
+    color: #dce2e8;
     font-size: 1em;
 }
 

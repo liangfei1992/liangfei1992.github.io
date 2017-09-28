@@ -10,7 +10,7 @@
 .profile-image {
     max-width: 50%;
     margin-bottom: 10%;
-    border: #3d3e42 solid 5px;
+    border: #4c4d52 solid 5px;
 }
 
 ul {
@@ -19,4 +19,5 @@ ul {
 
 .contact {
     margin-top: 10%;
+    color: #4c4d52;
 }
