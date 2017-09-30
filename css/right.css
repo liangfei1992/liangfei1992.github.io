@@ -31,7 +31,7 @@ h5 {
     text-align: center;
 }
 
-.card.white-border:hover {
+.card.white-border-bold:hover {
     border: #8bc7ed solid 4px;
 }
 
@@ -53,6 +53,10 @@ h5 {
 
 .card li a {
     color: #4c4d52;
+}
+
+.list-group {
+    border-radius: 0;
 }
 
 .card-body {

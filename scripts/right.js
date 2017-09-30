@@ -183,7 +183,7 @@ indexBody.controller("skills", function($scope){
                 },
                 {
                     skill: "CSS",
-                    percents: 20,
+                    percents: 10,
                     color: "bg-warning",
                 },
                 {
@@ -192,14 +192,14 @@ indexBody.controller("skills", function($scope){
                     color: "bg-info",
                 },
                 {
-                    skill: "jQuery",
-                    percents: 8,
-                    color: "bg-primary",
+                    skill: "angularjs",
+                    percents: 20,
+                    color: "bg-success",
                 },
                 {
-                    skill: "angularjs",
-                    percents: 15,
-                    color: "bg-success",
+                    skill: "Django",
+                    percents: 8,
+                    color: "bg-primary",
                 },
             ]
         },
