@@ -1,5 +1,30 @@
-indexBody.controller("profile", function($scope){
-    $scope.name = "Fei Liang";
+indexBody.controller("profile", function($scope, $timeout){
+
+    var name = "Fei Liang";
+    $scope.nameToShow = "Hello World !";
+    $scope.typeUnfinished = true;
+    $scope.textColor = "blue-text";
+    var typeDelete = function(){
+        if ($scope.nameToShow.length > 0) {
+            $scope.nameToShow = $scope.nameToShow.slice(0, -1);
+            $timeout(typeDelete, 100);
+        } else {
+            $scope.textColor = "black-text";
+            $timeout(typeAdd, 500);
+        }
+    };
+    var typeAdd = function(){
+        if ($scope.nameToShow.length < name.length) {
+            $scope.nameToShow = $scope.nameToShow + name.charAt($scope.nameToShow.length);
+            $timeout(typeAdd, 100);
+        } else {
+            $timeout(function(){
+                $scope.typeUnfinished = false;
+            }, 1000)
+        };
+    };
+    $timeout(typeDelete, 2000);
+
     $scope.fields = ["Machine Learing", "Software Engineer"];
     $scope.generateFieldsString = function(){
         var fieldsString = ""
@@ -18,7 +43,8 @@ indexBody.controller("profile", function($scope){
             name: "LinkedIn",
             url: "https://www.linkedin.com/in/fei-liang-69b591130/",
         },
-    ]
+    ];
+
 })
 
 indexBody.controller("contacts",function($scope){

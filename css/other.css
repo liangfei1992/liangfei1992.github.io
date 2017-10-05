@@ -1,3 +1,4 @@
+/*border*/
 .black-border {
     border: #4c4d52 2px solid;
 }
@@ -22,10 +23,6 @@
     border: 0px;
 }
 
-.black-background{
-    background-color: #4c4d52;
-}
-
 .danger-border {
     border: #ff4444 2px solid;
 }
@@ -42,10 +39,25 @@
     border: #3F729B 4px solid;
 }
 
+/*background*/
+.black-background{
+    background-color: #4c4d52;
+}
+
+/*text*/
 .white-text {
     color: white;
 }
 
+.black-text {
+    color : #4c4d52;
+}
+
+.blue-text {
+    color: #8bc7ed;
+}
+
+/*badge*/
 .blue-badge {
     background: #8bc7ed;
 }

@@ -3,9 +3,22 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .profile .card span {
     margin-left: 3%;
     margin-right: 3%;
+}
+
+.cursor {
+    color: #8bc7ed;
+    background-color: #8bc7ed;
+    width: 10px;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .contact {
@@ -25,4 +38,10 @@ ul {
 .contact {
     margin-top: 10%;
     color: #4c4d52;
+}
+
+
+@keyframes blink {
+    from {background-color: white; color: white};
+    to {background-color: #8bc7ed; color:#8bc7ed};
 }

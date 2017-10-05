@@ -8,9 +8,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Josefin+Sans|Shrikhand|Cabin|Roboto|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Josefin+Sans|Shrikhand|Cabin|Montserrat|Roboto|Open+Sans" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
+    <script src="scripts/angular.min.js"></script>
 
   </head>
 
@@ -18,7 +19,6 @@
   <body ng-app="indexBody" >
       <!-- scripts -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
-    <script src="scripts/angular.min.js"></script>
     <script src="scripts/indexApp.js"></script>
     <script src="scripts/left.js"></script>
     <script src="scripts/right.js"></script>
@@ -33,7 +33,7 @@
                     <div class="card text-center no-border">
                         <img class="card-img-top rounded-circle img-responsive profile-image mx-auto" src="resources/images/profile.jpg" width="100%">
                         <div class="card-body">
-                            <h2 class="card-title">{{ name }}</h2>
+                            <h2 class="card-title" ng-class="textColor">{{ nameToShow }}<span class="cursor" ng-if="typeUnfinished">|</span></h2>
                             <h6 class="text-muted" ng>{{ generateFieldsString() }}</h6>
                             <span ng-repeat="resume in resumes"><a href="{{ resume.url }}" class="badge blue-badge">{{ resume.name }}</a></span>
                         </div>
