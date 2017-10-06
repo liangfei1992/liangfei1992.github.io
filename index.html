@@ -33,9 +33,9 @@
                     <div class="card text-center no-border">
                         <img class="card-img-top rounded-circle img-responsive profile-image mx-auto" src="resources/images/profile.jpg" width="100%">
                         <div class="card-body">
-                            <h2 class="card-title" ng-class="textColor">{{ nameToShow }}<span class="cursor" ng-if="typeUnfinished">|</span></h2>
-                            <h6 class="text-muted" ng>{{ generateFieldsString() }}</h6>
-                            <span ng-repeat="resume in resumes"><a href="{{ resume.url }}" class="badge blue-badge">{{ resume.name }}</a></span>
+                            <h2 class="card-title" ng-class="textColor" ng-cloak>{{ nameToShow }}<span class="cursor" ng-if="typeUnfinished">|</span></h2>
+                            <h6 class="text-muted" ng-cloak>{{ generateFieldsString() }}</h6>
+                            <span ng-repeat="resume in resumes" ng-cloak><a href="{{ resume.url }}" class="badge blue-badge">{{ resume.name }}</a></span>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="row container">
                         <div class="col-md-3">
                             <ul>
-                                <li ng-repeat="(key, val) in contactInfo"><b>{{ key }}</b></li>
+                                <li ng-repeat="(key, val) in contactInfo" ng-cloak><b>{{ key }}</b></li>
                             </ul>
                         </div>
 
@@ -52,7 +52,7 @@
 
                         <div class="col-md-7 text-left">
                             <ul>
-                                <li ng-repeat="(key, val) in contactInfo">{{ val }}</li>
+                                <li ng-repeat="(key, val) in contactInfo" ng-cloak>{{ val }}</li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                 <!-- about me description -->
                 <div class="container aboutme" ng-controller="aboutme">
                     <h5>ABOUT ME</h5>
-                    <p ng-repeat="x in aboutme">{{ x }}</p>
+                    <p ng-repeat="x in aboutme" ng-cloak>{{ x }}</p>
                 </div>
 
                 <!-- projects description -->
@@ -78,13 +78,13 @@
                     <div class="card-columns black-background">
 
                         <div class="card black-background white-border-bold" ng-repeat="project in projects">
-                            <img class="card-img-top img-responsive mx-auto" ng-src="{{ project.imageAddress }}" alt="">
+                            <img class="card-img-top img-responsive mx-auto" ng-src="{{ project.imageAddress }}" alt="" ng-cloak>
                             <div class="card-body black-background">
-                                <h4 class="card-title">{{ project.title }}</h4>
-                                <h5 class="text-muted-my">{{ project.description }}</h5>
+                                <h4 class="card-title" ng-cloak>{{ project.title }}</h4>
+                                <h5 class="text-muted-my" ng-cloak>{{ project.description }}</h5>
                             </div>
                             <ul class="list-group list-group-flush white-background">
-                                <li class="list-group-item white-background" ng-repeat=" p in project.projects "><a href="{{ p.url }}">{{ p.name }}</a></li>
+                                <li class="list-group-item white-background" ng-repeat=" p in project.projects " ng-cloak><a href="{{ p.url }}">{{ p.name }}</a></li>
                             </ul>
                             <div class="card-body black-background" ng-if=" project.title === 'Software Development' ">
                                 <a href="demo.html" class="card-link white-text">DEMO</a>
@@ -98,8 +98,8 @@
                     <h5>SKILLS</h5>
 
                     <div class="skill" ng-repeat="skill in skills">
-                        <h6>{{ skill.skillName }}</h6>
-                        <div class="progress">
+                        <h6 ng-cloak>{{ skill.skillName }}</h6>
+                        <div class="progress" ng-cloak>
                             <div class="progress-bar" ng-repeat="s in skill.skills" ng-class="s.color" role="progressbar" style="width: {{s.percents}}%" aria-valuenow="{{s.percents}}" aria-valuemin="0" aria-valuemax="100">{{ s.skill }}</div>
                         </div>
                     </div>
